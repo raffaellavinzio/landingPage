@@ -121,6 +121,7 @@ section {
 .page__header {
   background: #fff;
   position: fixed;
+  transform: translate3d(0, 0, 0);
   top: 0;
   width: 100%;
   z-index: 5;
