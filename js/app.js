@@ -136,9 +136,9 @@ function hideNav(delay) {
   timer && clearTimeout(timer);
   timer = setTimeout(function() {
     if (window.scrollY > 100) {
-      return document.querySelector(".navbar").classList.add("hide");
+      return nav.classList.add("hide");
     }
-    return document.querySelector(".navbar").classList.remove("hide");
+    return nav.classList.remove("hide");
   }, delay);
 }
 
