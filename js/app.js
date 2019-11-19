@@ -134,9 +134,11 @@ function showBtnUp() {
 function hideNav(delay) {
   var timer;
   timer && clearTimeout(timer);
-  nav.classList.add("hide");
   timer = setTimeout(function() {
-    nav.classList.remove("hide");
+    if (window.scrollY > 100) {
+      return document.querySelector(".navbar").classList.add("hide");
+    }
+    return document.querySelector(".navbar").classList.remove("hide");
   }, delay);
 }
 
